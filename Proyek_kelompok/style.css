@@ -1,0 +1,15 @@
+section{
+    min-height: 420px;
+}
+
+.jumbotron{
+    background-image: url(img/gunung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+body{
+    transition: 1s;
+}
