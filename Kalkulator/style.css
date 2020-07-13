@@ -54,12 +54,9 @@ button:hover {
   background-color: darkgray;
 }
 
+.all-clear,
 .zero-btn {
   width: 50%;
-}
-
-.all-clear {
-  width: 75%;
 }
 
 .operator,
