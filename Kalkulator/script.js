@@ -1,6 +1,7 @@
 let prevNumber = "";
 let calculationOperator = "";
 let currentNumber = "0";
+
 const calculatorScreen = document.querySelector(".calculator-screen");
 
 const updateScreen = (number) => {
@@ -75,6 +76,20 @@ const calculate = () => {
   }
   currentNumber = result;
   calculationOperator = "";
+};
+
+const percentage = document.querySelector(".percentage");
+
+percentage.addEventListener("click", (event) => {
+  percentageNumber(event.target.value);
+  updateScreen(currentNumber);
+});
+
+const percentageNumber = () => {
+  if (currentNumber === "0") {
+    return;
+  }
+  currentNumber = currentNumber / 100;
 };
 
 // clear
